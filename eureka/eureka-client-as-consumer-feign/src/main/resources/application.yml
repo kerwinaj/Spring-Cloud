@@ -1,3 +1,6 @@
+server:
+  port: 9999
+
 #注册中心
 eureka:
   client:
@@ -5,12 +8,8 @@ eureka:
     service-url:
       # 这个地址必须得对
       defaultZone: http://localhost:8500/eureka/
-  #服务名
-  instance:
-    # 这个名字我随便写的也不影响, 写了就用这个, 如果没写就用spring.application.name
-    appname: mxn2233344
 
 #设置服务名称
 spring:
   application:
-    name: yuk-test-02
+    name: yuk-test-eureka-client-as-consumer
